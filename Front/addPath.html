@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cars Project</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="col-md-3" id="right-panel">
+        <div id="inputs">
+            <form role="form">
+                <div class="form-group">
+                    <label for="id">
+                        Identifiant :
+                    </label>
+                    <input type="text" class="form-control" id="id" />
+                </div>
+                <div class="form-group">
+                    <label for="date">
+                        Date :
+                    </label>
+                    <input type="date" id="date" value="YYYY-MM-DD">
+                </div>
+                <div class="form-group">
+                    <label for="time">
+                        Time :
+                    </label>
+                    <input type="time" id="time">
+                </div>
+                <div class="form-group">
+                    <label for="lat">
+                        Latitude :
+                    </label>
+                    <input type="text" class="form-control" id="lat" value="48.13667064308398" />
+                </div>
+                <div class="form-group">
+                    <label for="lng">
+                        Longitude :
+                    </label>
+                    <input type="text" class="form-control" id="lng" value="-1.6226135644808437" />
+                </div>
+                <button type="button" class="btn btn-primary" onclick="submitPath()">
+                    Submit
+                </button>
+                </from>
+        </div>
+        <div id="output"></div>
+    </div>
+    <div class="col-md-9" id="map"></div>
+    <script>
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFWeM9G0k9KPX8zlkeGTkYlysdBrLHvx8&callback=initMap">
+        </script>
+    <script src="jquery.min.js"></script>
+</body>
+
+</html>
